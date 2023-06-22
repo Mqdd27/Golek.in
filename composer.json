@@ -1,0 +1,11 @@
+{
+    "name": "kim/miq",
+    "require": {
+        "twilio/sdk": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Miqdad"
+        }
+    ]
+}

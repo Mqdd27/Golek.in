@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Direct Page</title>
+<style>
+/* Webfont */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+body {
+  background-color: #f6f6f6;
+  font-size: 24px;
+  font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 2em;
+  color: #2b2b2b;
+}
+</style>
+</head>
+<body>
+<p>You will be redirected in <time><strong id="seconds">1</strong> seconds</time>.</p>
+</body>
+<script>
+var el = document.getElementById('seconds'),
+    total = el.innerHTML,
+    timeinterval = setInterval(function () {
+        total = --total;
+        el.textContent = total;
+        if (total <= 0) {
+            clearInterval(timeinterval);
+           window.location = 'login.php';
+        }
+    }, 0);
+</script>
+</html>
