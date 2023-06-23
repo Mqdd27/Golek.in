@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 // Your Account SID and Auth Token from console.twilio.com
 $sid = "AC023ccd085f3d79fa023113d340ed0e64";
-$token = "620030a07ea5be0a48f579e21003c0a9";
+$token = "*******************************";
 $client = new Twilio\Rest\Client($sid, $token);
 
 $phoneNumber = '+'.$_GET['nomor'];
